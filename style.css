@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+}
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    font-size: 1.2rem;
+    border: 1px solid lightblue;
+}
+.display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid lightblue;
+    overflow-x: auto;
+}
+.keypad{
+    display: flex;
+    width: 100%;
+}
+.numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.k-button{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    border: 1px solid lightblue;
+    transition: .25s;
+}
+
+.k-button:hover{
+    color: rgb(0, 191, 255);
+}
+
+.k-button.color {
+    color: lightblue;
+}
+.k-button.large{
+    width: 50%;
+}
+.k-button.color:hover{
+    color: black;
+}
